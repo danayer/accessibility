@@ -26,7 +26,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'accessibility_linkhighlight';
 $plugin->release = '1.0.1';
-$plugin->version = 2025021800;
+$plugin->version = 2026040900;
 $plugin->requires = 2022041900;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [
