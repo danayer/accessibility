@@ -22,25 +22,27 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
 .local-accessibility-buttoncontainer {
     position: fixed;
     bottom: 5rem;
-    right: 2rem;
+    left: 2rem;
+    right: unset;
 }
 body.dir-rtl .local-accessibility-buttoncontainer {
-    right: unset;
-    left: 2rem;
+    left: unset;
+    right: 2rem;
 }
 
 #page.drawers.show-drawer-right .local-accessibility-buttoncontainer {
-    right: calc(315px + 2rem);
+    right: unset;
+    left: 2rem;
 }
 body.dir-rtl #page.drawers.show-drawer-right .local-accessibility-buttoncontainer {
-    right: unset;
-    left: calc(315px + 2rem);
+    left: unset;
+    right: calc(315px + 2rem);
 }
 
 #local-accessibility-buttoncontainer button {
     font-size: 16px;
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     line-height: 16px;
     padding: 0;
     text-align: center;
@@ -73,4 +75,3 @@ body.dir-rtl .local-accessibility-panel {
 .h5p-embed .local-accessibility-buttoncontainer {
     display: none;
 }
-
