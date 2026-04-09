@@ -26,16 +26,16 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
     cursor: grab;
 }
 body.dir-rtl .local-accessibility-buttoncontainer {
-    left: 2rem;
-    right: unset;
+    left: unset;
+    right: 2rem;
 }
 
 #page.drawers.show-drawer-left .local-accessibility-buttoncontainer {
     left: calc(315px + 2rem);
 }
-body.dir-rtl #page.drawers.show-drawer-left .local-accessibility-buttoncontainer {
-    left: calc(315px + 2rem);
-    right: unset;
+body.dir-rtl #page.drawers.show-drawer-right .local-accessibility-buttoncontainer {
+    left: unset;
+    right: calc(315px + 2rem);
 }
 
 #local-accessibility-buttoncontainer button {
@@ -57,8 +57,8 @@ body.dir-rtl #page.drawers.show-drawer-left .local-accessibility-buttoncontainer
     box-shadow: 0 0 5px #000;
 }
 body.dir-rtl .local-accessibility-panel {
-    left: 2rem;
-    right: unset;
+    left: unset;
+    right: 2rem;
 }
 
 .local-accessibility-panel > .card-body {
