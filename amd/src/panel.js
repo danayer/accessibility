@@ -83,7 +83,12 @@ export const init = () => {
         $panel.hide();
 
         // Restore saved button position
-        const savedPos = localStorage.getItem(STORAGE_KEY);
+        let savedPos = null;
+        try {
+            savedPos = localStorage.getItem(STORAGE_KEY);
+        } catch (e) {
+            // localStorage may be unavailable (e.g. Safari private browsing, restrictive security policy)
+        }
         if (savedPos) {
             try {
                 const pos = JSON.parse(savedPos);
@@ -137,10 +142,14 @@ export const init = () => {
             const endDrag = () => {
                 if (isDragging) {
                     const finalRect = $buttonContainer[0].getBoundingClientRect();
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-                        top: finalRect.top + 'px',
-                        left: finalRect.left + 'px'
-                    }));
+                    try {
+                        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                            top: finalRect.top + 'px',
+                            left: finalRect.left + 'px'
+                        }));
+                    } catch (e) {
+                        // localStorage may be unavailable
+                    }
                 }
                 isDragging = false;
             };
