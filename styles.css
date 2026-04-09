@@ -31,7 +31,7 @@ body.dir-rtl .local-accessibility-buttoncontainer {
 }
 
 #page.drawers.show-drawer-left .local-accessibility-buttoncontainer {
-    left: calc(315px + 2rem);
+    left: 2rem;
 }
 body.dir-rtl #page.drawers.show-drawer-right .local-accessibility-buttoncontainer {
     left: unset;
@@ -40,8 +40,8 @@ body.dir-rtl #page.drawers.show-drawer-right .local-accessibility-buttoncontaine
 
 #local-accessibility-buttoncontainer button {
     font-size: 16px;
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     line-height: 16px;
     padding: 0;
     text-align: center;
@@ -74,4 +74,3 @@ body.dir-rtl .local-accessibility-panel {
 .h5p-embed .local-accessibility-buttoncontainer {
     display: none;
 }
-
