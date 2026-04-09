@@ -22,19 +22,20 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
 .local-accessibility-buttoncontainer {
     position: fixed;
     bottom: 5rem;
-    right: 2rem;
+    left: 2rem;
+    cursor: grab;
 }
 body.dir-rtl .local-accessibility-buttoncontainer {
-    right: unset;
-    left: 2rem;
+    left: unset;
+    right: 2rem;
 }
 
-#page.drawers.show-drawer-right .local-accessibility-buttoncontainer {
-    right: calc(315px + 2rem);
+#page.drawers.show-drawer-left .local-accessibility-buttoncontainer {
+    left: calc(315px + 2rem);
 }
 body.dir-rtl #page.drawers.show-drawer-right .local-accessibility-buttoncontainer {
-    right: unset;
-    left: calc(315px + 2rem);
+    left: unset;
+    right: calc(315px + 2rem);
 }
 
 #local-accessibility-buttoncontainer button {
@@ -51,13 +52,13 @@ body.dir-rtl #page.drawers.show-drawer-right .local-accessibility-buttoncontaine
     display: none;
     position: fixed;
     bottom: 8rem;
-    right: 2rem;
+    left: 2rem;
     z-index: 1040;
     box-shadow: 0 0 5px #000;
 }
 body.dir-rtl .local-accessibility-panel {
-    right: unset;
-    left: 2rem;
+    left: unset;
+    right: 2rem;
 }
 
 .local-accessibility-panel > .card-body {
