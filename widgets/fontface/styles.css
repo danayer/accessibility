@@ -26,7 +26,7 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
 
 body.accessibility-fontface-serif,
 body.accessibility-fontface-serif *:not(i) {
-    font-family: none !important; /* stylelint-disable-line declaration-no-important */
+    font-family: serif !important; /* stylelint-disable-line declaration-no-important */
 }
 
 body.accessibility-fontface-sansserif,

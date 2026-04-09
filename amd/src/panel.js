@@ -142,6 +142,7 @@ export const init = () => {
                         left: finalRect.left + 'px'
                     }));
                 }
+                isDragging = false;
             };
 
             return {moveDrag, endDrag};
