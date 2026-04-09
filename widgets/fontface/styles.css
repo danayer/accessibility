@@ -36,5 +36,5 @@ body.accessibility-fontface-sansserif *:not(i) {
 
 body.accessibility-fontface-dyslexic,
 body.accessibility-fontface-dyslexic *:not(i) {
-    font-family: opendyslexic !important; /* stylelint-disable-line declaration-no-important */
+    font-family: opendyslexic, sans-serif !important; /* stylelint-disable-line declaration-no-important */
 }
